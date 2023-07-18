@@ -12084,7 +12084,7 @@ input.text-white::placeholder {
 }
 
 .device[data-device='iPhoneX'][data-orientation='portrait'][data-color='black'] .screen {
-  top: 15px;
+  top: 24px;
   left: 5%;
   width: 90%;
   height: 93.49030471%;

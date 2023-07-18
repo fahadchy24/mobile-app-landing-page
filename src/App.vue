@@ -78,12 +78,12 @@ import data from './assets/js/data'
         </div>
     </section>
     <section class="bg-center py-0" id="about" style="
-      background: url(img/service-bg.svg) no-repeat;
+      background: url(../src/assets/img/service-bg.svg) no-repeat;
       background-size: cover;
     ">
         <section class="about py-0">
             <div class="container">
-                <p class="h6 text-uppercase text-primary">What is it all about?</p>
+                <p class="h6 text-uppercase text-light">What is it all about?</p>
                 <h2 class="mb-5">Track your time and expenses</h2>
                 <div class="row pb-5 gy-4">
                     <div class="col-lg-4 col-md-6">
@@ -142,7 +142,7 @@ import data from './assets/js/data'
                     </div>
                     <div class="col-lg-6">
                         <h2>The Best Business Solutions Guide for You</h2>
-                        <p class="text-muted">
+                        <p class="text-dark">
                             Dolor sit amet consectetur elit sed do eiusmod tempor incididunt
                             labore dolore magna aliqua enim ad minim veniam quis nostrud
                             exercitation.
@@ -155,17 +155,17 @@ import data from './assets/js/data'
                 <div class="row align-items-center gy-5">
                     <div class="col-lg-6">
                         <h2>Make your own success as simple you clap</h2>
-                        <p class="text-muted">
+                        <p class="text-dark">
                             Dolor sit amet consectetur elit sed do eiusmod tempor incididunt
                             labore dolore magna aliqua enim ad minim veniam quis nostrud
                             exercitation.
                         </p>
                         <ul class="list-check">
-                            <li class="text-muted mb-2">Various Analysis Options</li>
-                            <li class="text-muted mb-2">
+                            <li class="text-dark mb-2">Various Analysis Options</li>
+                            <li class="text-dark mb-2">
                                 Page Load Details (time, size, number of requests)
                             </li>
-                            <li class="text-muted mb-2">
+                            <li class="text-dark mb-2">
                                 Waterfall, Video and Report History
                             </li>
                         </ul>
@@ -238,12 +238,12 @@ import data from './assets/js/data'
         </section>
     </section>
     <section class="p-0" id="testimonials" style="
-      background: url(img/testimonials-bg.png) no-repeat;
+      background: url(../src/assets/img/testimonials-bg.png) no-repeat;
       background-size: 40% 100%;
       background-position: left center;
     ">
         <div class="container text-center">
-            <p class="h6 text-uppercase text-primary">Testimonials</p>
+            <p class="h6 text-uppercase text-light">Testimonials</p>
             <h2 class="mb-5">What Our Users Says?</h2>
             <div class="row">
                 <div class="col-lg-8 mx-auto">
@@ -340,7 +340,7 @@ import data from './assets/js/data'
                     <h4>
                         {{ data.siteBranding }}
                     </h4>
-                    <p class="text-muted">
+                    <p class="text-dark">
                         {{ data.footerSiteSlogan }}
                     </p>
                 </div>
@@ -349,22 +349,22 @@ import data from './assets/js/data'
                     <div class="d-flex">
                         <ul class="list-unstyled d-inline-block me-4 mb-0">
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[0].url">
+                                <a class="footer-link text-dark" :href="data.footerLinks[0].url">
                                     {{ data.footerLinks[0].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[1].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[1].url">{{
                                     data.footerLinks[1].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[2].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[2].url">{{
                                     data.footerLinks[2].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[3].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[3].url">{{
                                     data.footerLinks[3].title }}
                                 </a>
                             </li>
@@ -376,22 +376,22 @@ import data from './assets/js/data'
                     <div class="d-flex">
                         <ul class="list-unstyled me-4 mb-0">
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[0].url">
+                                <a class="footer-link text-dark" :href="data.footerLinks[0].url">
                                     {{ data.footerLinks[0].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[1].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[1].url">{{
                                     data.footerLinks[1].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[2].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[2].url">{{
                                     data.footerLinks[2].title }}
                                 </a>
                             </li>
                             <li class="mb-2">
-                                <a class="footer-link" :href="data.footerLinks[3].url">{{
+                                <a class="footer-link text-dark" :href="data.footerLinks[3].url">{{
                                     data.footerLinks[3].title }}
                                 </a>
                             </li>
@@ -401,28 +401,28 @@ import data from './assets/js/data'
                 <div class="col-lg-5">
                     <h2 class="h5 mb-4">Contact Info</h2>
                     <ul class="list-unstyled me-4 mb-3">
-                        <li class="mb-2 text-muted">
+                        <li class="mb-2 text-dark">
                             {{ data.contactInfo.address }}
                         </li>
                         <li class="mb-2">
-                            <a class="footer-link" :href="'tel:' + data.contactInfo.phone">{{ data.contactInfo.phone }}</a>
+                            <a class="footer-link text-dark" :href="'tel:' + data.contactInfo.phone">{{ data.contactInfo.phone }}</a>
                         </li>
                         <li class="mb-2">
-                            <a class="footer-link" :href="'mailto:' + data.contactInfo.email">{{ data.contactInfo.email }}</a>
+                            <a class="footer-link text-dark" :href="'mailto:' + data.contactInfo.email">{{ data.contactInfo.email }}</a>
                         </li>
                     </ul>
                     <ul class="list-inline mb-0">
                         <li class="list-inline-item">
-                            <a class="social-link" href="#!"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-link text-dark" href="#!"><i class="fab fa-facebook-f"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="social-link" href="#!"><i class="fab fa-twitter"></i></a>
+                            <a class="social-link text-dark" href="#!"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="social-link" href="#!"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="social-link text-dark" href="#!"><i class="fab fa-linkedin-in"></i></a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="social-link" href="#!"><i class="fab fa-instagram"></i></a>
+                            <a class="social-link text-dark" href="#!"><i class="fab fa-instagram"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -430,7 +430,7 @@ import data from './assets/js/data'
         </div>
         <div class="copyrights">
             <div class="container text-center py-4">
-                <p class="mb-0 text-muted text-sm">
+                <p class="mb-0 text-dark text-sm">
                     &copy; {{ data.copyright.year }}, {{ data.copyright.text }}
                     <a href="https://bootstrapious.com/p/app-landing-page" class="text-reset">{{
                         data.copyright.companyName }}</a>.
