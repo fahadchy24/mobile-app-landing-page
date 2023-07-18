@@ -1,5 +1,6 @@
 const data = {
   siteBranding: "Mobile App", // Logo or Plain text
+  siteURL: 'index.html',
   headerMenu: [
     {
       title: "Home",

@@ -1,5 +1,6 @@
 <script setup>
 import data from './assets/js/data'
+import { hero } from './assets/js/hero'
 </script>
 
 <template>
@@ -7,7 +8,7 @@ import data from './assets/js/data'
     <header class="header">
         <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="index.html"> {{ data.siteBranding }} </a>
+                <a class="navbar-brand" :href="data.siteURL"> {{ data.siteBranding }} </a>
                 <button class="navbar-toggler navbar-toggler-end" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -42,26 +43,22 @@ import data from './assets/js/data'
         </nav>
     </header>
     <!-- Hero Section-->
-    <section class="hero bg-top py-5" id="hero" style="
-      background: url(../src/assets/img/banner-4.png) no-repeat;
-      background-size: 100% 80%;
-    ">
+    <section class="hero bg-top py-5" id="hero" :style="hero.backgroudImageStyling">
         <div class="container py-5">
             <div class="row py-5">
                 <div class="col-lg-5 py-5">
-                    <h1>Download your best app</h1>
+                    <h1>{{ hero.title }}</h1>
                     <p class="my-4 text-muted">
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                        nonumy eirmod.
+                        {{ hero.subtitle }}
                     </p>
                     <ul class="list-inline mb-0">
-                        <li class="list-inline-item mb-2 mb-lg-0">
-                            <a class="btn btn-primary btn-lg px-4" href="#!">
-                                <i class="fab fa-google-play me-3"></i>Google Play</a>
+                        <li :class="hero.googlePlayBtn.styling.liStyling">
+                            <a :class="hero.googlePlayBtn.styling.anchorStyling" :href="hero.googlePlayBtn.url">
+                                <i :class="hero.googlePlayBtn.iconStyle"></i>{{ hero.googlePlayBtn.title }}</a>
                         </li>
-                        <li class="list-inline-item">
-                            <a class="btn btn-primary btn-lg px-4" href="#!">
-                                <i class="fab fa-app-store me-3"></i>App Store</a>
+                        <li :class="hero.appStoreBtn.styling.liStyling">
+                            <a :class="hero.appStoreBtn.styling.anchorStyling" :href="hero.appStoreBtn.url">
+                                <i :class="hero.appStoreBtn.iconStyle"></i>{{ hero.appStoreBtn.title }}</a>
                         </li>
                     </ul>
                 </div>
@@ -69,7 +66,7 @@ import data from './assets/js/data'
                     <div class="device-wrapper mx-auto">
                         <div class="device shadow" data-device="iPhoneX" data-orientation="portrait" data-color="black">
                             <div class="screen">
-                                <img class="img-fluid" src="/src/assets/img/mobile.png" alt="" />
+                                <img :class="hero.bannerImage.styling" :src="hero.bannerImage.url" :alt="hero.bannerImage.alt" />
                             </div>
                         </div>
                     </div>
