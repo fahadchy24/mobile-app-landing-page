@@ -1,5 +1,27 @@
 const data = {
   siteBranding: "Mobile App", // Logo or Plain text
+  headerMenu: [
+    {
+      title: "Home",
+      url: "#hero",
+      status: true,
+    },
+    {
+      title: "About",
+      url: "#about",
+      status: false,
+    },
+    {
+      title: "Services",
+      url: "#services",
+      status: false,
+    },
+    {
+      title: "Testimonials",
+      url: "#testimonials",
+      status: false,
+    },
+  ],
   contactInfo: {
     address: "Dhaka Bangladesh",
     phone: "12345678",
@@ -32,4 +54,4 @@ const data = {
   },
 };
 
-export default data
+export default data;

@@ -16,17 +16,25 @@ import data from './assets/js/data'
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link link-scroll active" href="#hero">Home <span
+                            <a class="nav-link link-scroll" :href="data.headerMenu[0].url">
+                                {{ data.headerMenu[0].title }} 
+                                <span
                                     class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-scroll" href="#about">About</a>
+                            <a class="nav-link link-scroll" :href="data.headerMenu[1].url">
+                                {{ data.headerMenu[1].title }}
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-scroll" href="#services">Services</a>
+                            <a class="nav-link link-scroll" :href="data.headerMenu[2].url">
+                                {{ data.headerMenu[2].title }}
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link link-scroll" href="#testimonials">Testimonials</a>
+                            <a class="nav-link link-scroll" :href="data.headerMenu[3].url">
+                                {{ data.headerMenu[3].title }}
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -35,7 +43,7 @@ import data from './assets/js/data'
     </header>
     <!-- Hero Section-->
     <section class="hero bg-top py-5" id="hero" style="
-      background: url(img/banner-4.png) no-repeat;
+      background: url(../src/assets/img/banner-4.png) no-repeat;
       background-size: 100% 80%;
     ">
         <div class="container py-5">
@@ -400,7 +408,7 @@ import data from './assets/js/data'
                             <a class="footer-link" :href="'tel:' + data.contactInfo.phone">{{ data.contactInfo.phone }}</a>
                         </li>
                         <li class="mb-2">
-                            <a class="footer-link" href="mailto:Nova@example.com">{{ data.contactInfo.email }}</a>
+                            <a class="footer-link" :href="'mailto:' + data.contactInfo.email">{{ data.contactInfo.email }}</a>
                         </li>
                     </ul>
                     <ul class="list-inline mb-0">
